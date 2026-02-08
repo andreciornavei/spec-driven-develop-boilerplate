@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "name": "spec-driven-develop-boilerplate",
+  "description": "AI agent specifications for backend and frontend development",
+  "mcpVersion": "1.0",
+  
+  "servers": {
+    "backend-agents": {
+      "type": "specification",
+      "enabled": true,
+      "spec": "./spec/backend/AGENTS.md",
+      "name": "Backend Development Agents",
+      "description": "10 specialized agents for backend development",
+      "agents": [
+        "backend-architecture",
+        "api-development",
+        "database",
+        "authentication-authorization",
+        "business-logic",
+        "testing",
+        "performance-optimization",
+        "devops-deployment",
+        "documentation",
+        "security"
+      ]
+    },
+    
+    "frontend-agents": {
+      "type": "specification",
+      "enabled": true,
+      "spec": "./spec/frontend/AGENTS.md",
+      "name": "Frontend Development Agents",
+      "description": "15 specialized agents for frontend development",
+      "agents": [
+        "ui-ux-design",
+        "component-development",
+        "state-management",
+        "api-integration",
+        "routing-navigation",
+        "forms-validation",
+        "performance-optimization",
+        "testing",
+        "styling-theming",
+        "accessibility",
+        "build-bundle",
+        "internationalization",
+        "documentation",
+        "seo-meta",
+        "security"
+      ]
+    }
+  },
+  
+  "tools": {
+    "file-system": {
+      "enabled": true,
+      "permissions": ["read", "write"]
+    },
+    "version-control": {
+      "enabled": true,
+      "provider": "git"
+    },
+    "package-manager": {
+      "enabled": true
+    },
+    "test-runner": {
+      "enabled": true
+    },
+    "build-tools": {
+      "enabled": true
+    }
+  },
+  
+  "workflows": {
+    "new-feature": {
+      "spec": "./spec/workflows/NEW_FEATURE.md"
+    },
+    "bug-fix": {
+      "spec": "./spec/workflows/BUG_FIX.md"
+    }
+  },
+  
+  "examples": {
+    "ecommerce": {
+      "spec": "./spec/examples/ECOMMERCE.md",
+      "enabled": true
+    }
+  }
+}
